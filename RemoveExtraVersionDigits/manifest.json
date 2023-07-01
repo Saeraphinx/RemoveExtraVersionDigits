@@ -4,7 +4,7 @@
   "name": "RemoveExtraVersionDigits",
   "author": "Saeraphinx",
   "version": "1.0.0",
-  "description": "Removes the extra version numbers form the text at your foot",
+  "description": "Removes the extra version numbers from the text at your foot",
   "gameVersion": "1.29.1",
   "dependsOn": {
     "BSIPA": "^4.2.0"
