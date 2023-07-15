@@ -23,15 +23,22 @@ namespace RemoveExtraVersionDigits.Patches
                 TextMeshPro versionText = __instance.GetField<TextMeshPro, SetApplicationVersionText>("_versionText");
                 string currVersion = Application.version.Split('_')[0];
                 versionText.gameObject.transform.transform.position = new Vector3(0.0969f, 0.005f, -0.106f);
+
                 if (DateTime.Now.Day == 1 && DateTime.Now.Month == 4)
                 {
                     versionText.text = "7.2.7";
-                } else if (DateTime.Now.Day == 27 && DateTime.Now.Month == 7)
+                }
+                else if (DateTime.Now.Day == 27 && DateTime.Now.Month == 7)
                 {
                     versionText.text = "7.2.7";
-                } else
+                }
+                else
                 {
                     versionText.text = Application.version.Split('_')[0];
+                }
+                if (Application.version.Split('_')[0] == "1.29.4")
+                {
+                    versionText.text = "gerald";
                 }
                 Plugin.Log.Info($"Moved foot text and set to {versionText.text}");
 

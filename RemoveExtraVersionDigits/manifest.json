@@ -3,7 +3,7 @@
   "id": "RemoveExtraVersionDigits",
   "name": "RemoveExtraVersionDigits",
   "author": "Saeraphinx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Removes the extra version numbers from the text at your foot",
   "gameVersion": "1.29.1",
   "dependsOn": {
